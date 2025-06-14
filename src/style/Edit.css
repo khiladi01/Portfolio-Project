@@ -1,0 +1,37 @@
+#navigation{
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+#icon{
+    box-shadow: 0 0 10px 0 #818181;
+}
+
+/* Mobile Menu Animation */
+.md\:hidden {
+    transform-origin: top;
+    transition: all 0.2s ease-in-out;
+}
+
+.md\:hidden.visible {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.md\:hidden.invisible {
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Mobile Menu Links */
+.md\:hidden a {
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.md\:hidden a:hover {
+    transform: translateX(5px);
+}
