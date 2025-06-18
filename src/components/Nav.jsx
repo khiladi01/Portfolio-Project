@@ -17,7 +17,7 @@ function Nav () {
                 <div id="icon" className="rounded-2xl">
                     <img src={Icon} alt="image" className="h-[32px] w-[35px] border-[2px] border-[#212121] rounded-2xl" />
                 </div>
-                <div className="text-[#BFA3FF] text-[25px] font-semibold uppercase tracking-[0.25em] md:pr-[850px]">
+                <div id="navname" className="text-[#00FFF0] text-[25px] font-semibold uppercase tracking-[0.25em] md:pr-[850px]">
                     <p>portfolio</p>
                 </div>
             </div>
@@ -37,10 +37,10 @@ function Nav () {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex text-md font-medium tracking-wider text-white uppercase gap-10">
-                <Link className="hover:text-[#FF6B6B] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Projects</Link>
-                <Link className="hover:text-[#FF6B6B] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Skills</Link>
-                <Link className="hover:text-[#FF6B6B] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Resume</Link>
-                <Link className="hover:text-[#FF6B6B] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Chat</Link>
+                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Projects</Link>
+                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Skills</Link>
+                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Resume</Link>
+                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Chat</Link>
             </div>
 
             {/* Mobile Menu */}
@@ -51,28 +51,28 @@ function Nav () {
             >
                 <div className="flex flex-col items-center py-4 space-y-4">
                     <Link 
-                        className="relative hover:text-[#FF6B6B] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
+                        className="relative hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
                         to="/"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Projects
                     </Link>
                     <Link 
-                        className="relative hover:text-[#FF6B6B] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
+                        className="relative hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
                         to="/"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Skills
                     </Link>
                     <Link 
-                        className="relative hover:text-[#FF6B6B] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
+                        className="relative hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
                         to="/"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Resume
                     </Link>
                     <Link 
-                        className="relative hover:text-[#FF6B6B] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
+                        className="relative hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
                         to="/"
                         onClick={() => setIsMenuOpen(false)}
                     >

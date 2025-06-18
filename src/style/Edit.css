@@ -3,7 +3,12 @@
 #navigation{
     position: sticky;
     top: 0px;
-    box-shadow: 0px 0px 5px 0px gray;
+    box-shadow: 0px 0px 5px 0px #fff;
+    z-index: 50;
+    backdrop-filter: blur(50px);
+}
+#navname{
+    font-family: 'Orbitron', sans-serif;
 }
 
 #icon{
@@ -48,5 +53,41 @@
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 #herobutton{
-    font-family: 'poppins', sans-serif;
+    /* font-family: 'Michroma', sans-serif; */
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+/* about & contact sec */
+#detailsec{
+    box-shadow: 0px 0px 5px #00C2FF;
+}
+#abouttitle{
+    font-family: 'Orbitron', sans-serif;
+}
+#aboutimg{
+    box-shadow: 0px 0px 20px cyan;
+    overflow: hidden;
+    position: relative;
+}
+
+#aboutimg img {
+    transform: scaleY(0);
+    opacity: 0;
+    transform-origin: top;
+}
+
+#aboutimg.animate img {
+    animation: imageLoad 3s ease-in-out forwards;
+}
+
+@keyframes imageLoad {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
 }
