@@ -12,13 +12,13 @@ function Nav () {
 
     return (
         <>
-        <nav id="navigation" className="h-[100px] bg-[#0F0E1C] flex justify-between items-center p-5 select-none relative">
+        <nav id="navigation" className="h-[100px] bg-transparent flex justify-between items-center p-5 select-none relative">
             <div className="flex items-center gap-4">
                 <div id="icon" className="rounded-2xl">
                     <img src={Icon} alt="image" className="h-[32px] w-[35px] border-[2px] border-[#212121] rounded-2xl" />
                 </div>
-                <div id="navname" className="text-[#00FFF0] text-[25px] font-semibold uppercase tracking-[0.25em] md:pr-[850px]">
-                    <p>portfolio</p>
+                <div id="navname" className="text-[25px] font-semibold uppercase tracking-[0.25em] md:pr-[850px]">
+                    <p className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">portfolio</p>
                 </div>
             </div>
 
@@ -36,11 +36,11 @@ function Nav () {
             </button>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex text-md font-medium tracking-wider text-white uppercase gap-10">
-                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Projects</Link>
-                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Skills</Link>
-                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Resume</Link>
-                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Chat</Link>
+            <div className="hidden md:flex text-md font-semibold tracking-wider bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent uppercase gap-10">
+                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/project">Projects</Link>
+                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/skill">Skills</Link>
+                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/resume">Resume</Link>
+                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/chat">Chat</Link>
             </div>
 
             {/* Mobile Menu */}
@@ -51,29 +51,29 @@ function Nav () {
             >
                 <div className="flex flex-col items-center py-4 space-y-4">
                     <Link 
-                        className="relative hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
-                        to="/"
+                        className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all ease-in-out duration-200 uppercase font-medium tracking-wider w-full text-center py-2"
+                        to="/project"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Projects
                     </Link>
                     <Link 
-                        className="relative hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
-                        to="/"
+                        className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all ease-in-out duration-200 uppercase font-medium tracking-wider w-full text-center py-2"
+                        to="/skill"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Skills
                     </Link>
                     <Link 
-                        className="relative hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
-                        to="/"
+                        className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all ease-in-out duration-200 uppercase font-medium tracking-wider w-full text-center py-2"
+                        to="/resume"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Resume
                     </Link>
                     <Link 
-                        className="relative hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200 text-white uppercase font-medium tracking-wider w-full text-center py-2"
-                        to="/"
+                        className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all ease-in-out duration-200 uppercase font-medium tracking-wider w-full text-center py-2"
+                        to="/chat"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         Chat
