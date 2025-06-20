@@ -81,6 +81,9 @@ function Nav () {
                 </div>
             </div>
         </nav>
+        <div className="h-[30px] w-full flex justify-center items-center bg-transparent">
+            <p className="flex justify-center items-center bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent font-medium tracking-wider">⇐ Welcome To My Portfolio ⇒</p>
+        </div>
         </>
     )
 }
