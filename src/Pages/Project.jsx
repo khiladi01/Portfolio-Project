@@ -33,7 +33,7 @@ function Project () {
       link: "https://khiladi01.github.io/Resume-Builder/"
     }, {
       id: "projectlayoutthird",
-      title: "Billionary ➤ 3D Web Clone",
+      title: "Billionary ➤ 3D Web Landing Page",
       image: Thirdprojectimage,
       tools: ["Vite", "React", "TailWind", "Spline"],
       shadow: "shadow-[#FF00E5]",
