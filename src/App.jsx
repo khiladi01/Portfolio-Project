@@ -1,9 +1,9 @@
-import { Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import Project from "./Pages/Project";
-import Skill from "./Pages/skill";
+import Skill from "./Pages/Skill";
 import Resume from "./Pages/Resume";
 import Chat from "./Pages/Chat";
 
@@ -18,7 +18,7 @@ function App() {
           <Route path="/project" element={<Project />} />
           <Route path="/skill" element={<Skill />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/chat" element={<Chat />} />
+          <Route path="/chat" element={<Chat  />} />
 
           
         </Routes>

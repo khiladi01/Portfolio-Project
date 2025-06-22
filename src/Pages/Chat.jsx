@@ -1,10 +1,23 @@
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 function Chat () {
+   
+  Swal.fire("Welcome To My Chat Page");
+
     return(
         <>
         <div className="h-screen bg-transparent grid place-content-center">
-        <div><p className="uppercase text-5xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">chat</p></div>
+        <div><p className="flex justify-center uppercase text-5xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">chat</p></div>
+
+        {/* adding chat system */}
+        <p className="text-center text-cyan-400 italic text-sm sm:text-base mt-6 px-4">
+        🚧 <span className="text-start font-semibold text-white">This space is under construction.</span><br />
+        The Chat page you're looking at is still evolving — a digital conversation zone is loading in the shadows.<br />
+        I'm currently experimenting, learning, and leveling up to bring you a futuristic chat experience that feels alive.<br />
+        Stay tuned — the code is brewing, and the bots are warming up. 🤖✨
+        </p>
+
         </div>
 
         {/* back button */}

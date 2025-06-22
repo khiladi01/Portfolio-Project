@@ -1,21 +1,43 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Skill() {
-  const barsRef = useRef([]);
-  barsRef.current = [];
+  
+  Swal.fire("Welcome To My Skills Page");
 
-  const addToRefs = (el) => {
+  const barsRef = useRef([]);
+  const buttonsRef = useRef([]);
+  const headingRef = useRef(null);
+
+  barsRef.current = [];
+  buttonsRef.current = [];
+
+  const addToBarRefs = (el) => {
     if (el && !barsRef.current.includes(el)) {
       barsRef.current.push(el);
     }
   };
 
+  const addToButtonRefs = (el) => {
+    if (el && !buttonsRef.current.includes(el)) {
+      buttonsRef.current.push(el);
+    }
+  };
+
   useEffect(() => {
+    // Animate heading on load
+    gsap.fromTo(
+      headingRef.current,
+      { x: -100, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1.2, ease: "power3.out" }
+    );
+
+    // Animate bars on scroll
     barsRef.current.forEach((bar) => {
       gsap.fromTo(
         bar,
@@ -28,6 +50,24 @@ function Skill() {
           scrollTrigger: {
             trigger: bar,
             start: "top 90%",
+          },
+        }
+      );
+    });
+
+    // Animate buttons on scroll
+    buttonsRef.current.forEach((btn) => {
+      gsap.fromTo(
+        btn,
+        { x: -100, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: btn,
+            start: "top 95%",
           },
         }
       );
@@ -52,12 +92,17 @@ function Skill() {
   return (
     <>
       <div className="min-h-screen bg-transparent px-4 py-6 select-none">
+        {/* Heading */}
         <div className="w-full h-[100px] flex justify-center items-center">
-          <p className="uppercase text-5xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+          <p
+            ref={headingRef}
+            className="uppercase text-5xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
+          >
             skills
           </p>
         </div>
 
+        {/* Skill Bars */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12 max-w-6xl mx-auto">
           {skills.map(([label, width], index) => (
             <div
@@ -69,7 +114,7 @@ function Skill() {
               </p>
               <div className="w-full max-w-[400px] h-[10px] rounded-xl bg-rose-50 overflow-hidden">
                 <div
-                  ref={addToRefs}
+                  ref={addToBarRefs}
                   className="h-full rounded-xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500"
                   style={{ width: `${width}px` }}
                 ></div>
@@ -79,9 +124,12 @@ function Skill() {
         </div>
       </div>
 
-      {/* back-next button */}
+      {/* Buttons */}
       <div className="h-auto w-full flex flex-col sm:flex-row justify-center items-center gap-5 px-4 py-4">
-        <div className="w-[200px] h-[50px] border-[2px] border-cyan-500 rounded-full hover:shadow-[0_0_15px_#00FFF0] transition-all ease-in-out duration-200">
+        <div
+          ref={addToButtonRefs}
+          className="w-[200px] h-[50px] border-[2px] border-cyan-500 rounded-full hover:shadow-[0_0_15px_#00FFF0] transition-all ease-in-out duration-200"
+        >
           <Link
             className="w-full h-full flex justify-center items-center uppercase text-xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
             to="/project"
@@ -89,7 +137,10 @@ function Skill() {
             ⇚ back
           </Link>
         </div>
-        <div className="w-[200px] h-[50px] border-[2px] border-cyan-500 rounded-full hover:shadow-[0_0_15px_#00FFF0] transition-all ease-in-out duration-200">
+        <div
+          ref={addToButtonRefs}
+          className="w-[200px] h-[50px] border-[2px] border-cyan-500 rounded-full hover:shadow-[0_0_15px_#00FFF0] transition-all ease-in-out duration-200"
+        >
           <Link
             className="w-full h-full flex justify-center items-center uppercase text-xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent"
             to="/resume"

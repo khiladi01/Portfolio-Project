@@ -3,9 +3,32 @@ import 'boxicons/css/boxicons.min.css';
 import "../style/Edit.css";
 import Model from "../components/Model.jsx";
 import Userimage from "../assets/home/developer.jpg"
+import Swal from 'sweetalert2'
 import { useEffect } from "react";
 
 function Home() {
+
+    const handler = () => {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+            footer: 'This form is currently inactive'
+          });
+    }
+
+    Swal.fire("Welcome To My Portfolio");
+
+    setTimeout(() => {
+        Swal.fire({
+            title: "Did you like my work? 💭",
+            text: "Your feedback means a lot — whether it's Nice or Need Improvement, I'm always looking to improve and level up.",
+            icon: "question",
+            showCancelButton: true,
+            confirmButtonText: "Yes, it's awesome! 🚀",
+            cancelButtonText: "Needs improvement 🤔",
+          });
+    },10000)
 
     useEffect(() => {
         const paragraphs = document.querySelectorAll("p");
@@ -87,7 +110,7 @@ function Home() {
                     <p id="abouttitle" className="uppercase text-2xl tracking-wider text-[#00FFF0] font-medium">contact us</p>
                 </div>
                 <div className="w-full mt-5">
-                    <form action="">
+                    <form action={handler}>
                         <div className="mb-4">
                             <label htmlFor="name" className="text-white pl-2">Name</label>
                             <input type="text" className="mt-1 w-full h-[40px] border-[2px] border-cyan-400 placeholder-cyan-300 outline-none pl-3 rounded-xl" />
