@@ -37,10 +37,10 @@ function Nav () {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex text-md font-semibold tracking-wider bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent uppercase gap-10">
+                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/">Home</Link>
                 <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/project">Projects</Link>
                 <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/skill">Skills</Link>
                 <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/resume">Resume</Link>
-                <Link className="hover:text-[#00FFF0] hover:underline hover:underline-offset-8 decoration-gray-200 transition-all ease-in-out duration-200" to="/chat">Chat</Link>
             </div>
 
             {/* Mobile Menu */}
@@ -50,6 +50,12 @@ function Nav () {
                 } z-40 shadow-lg`}
             >
                 <div className="flex flex-col items-center py-4 space-y-4">
+                    <Link className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all ease-in-out duration-200 uppercase font-medium tracking-wider w-full text-center py-2" 
+                        to="/"
+                        onClick={() => setIsMenuOpen(false)}
+                        >
+                            Home
+                    </Link>
                     <Link 
                         className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent transition-all ease-in-out duration-200 uppercase font-medium tracking-wider w-full text-center py-2"
                         to="/project"

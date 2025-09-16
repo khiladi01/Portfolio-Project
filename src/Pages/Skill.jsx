@@ -83,6 +83,8 @@ function Skill() {
     ["NEXT.JS", 250],
     ["VITE", 390],
     ["NODE.JS", 350],
+    ["MONGODB", 300],
+    ["EXPRESS.JS", 250],
     ["THREE.JS", 250],
     ["SPLINE 3D", 200],
     ["GITHUB", 300],

@@ -1,5 +1,5 @@
 import "../style/Edit.css";
-import Resumeimage from "../assets/Resume/My Resume.png";
+import Resumeimage from "../assets/Resume/Raushan Raj Resume.png";
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import Swal from "sweetalert2";

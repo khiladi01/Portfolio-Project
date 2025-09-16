@@ -96,6 +96,12 @@
   #projectlayoutthird{
     box-shadow: 0px 0px 10px #FF00E5;
   }
+  #projectlayoutfourth{
+    box-shadow: 0px 0px 10px #00FFF0;
+  }
+  #projectlayoutfifth{
+    box-shadow: 0px 0px 10px #FF00E5;
+  }
 
   /* Resume Section */
   #resumelayout{

@@ -30,7 +30,7 @@ function Footer () {
                     <Link to='https://www.linkedin.com/in/raushan-raj-98609b269'>
                         <i className='bx bxl-linkedin text-2xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent hover:transform-content hover:scale-125 transition-all ease-in-out duration-300'></i>
                     </Link>
-                    <Link to='https://github.com/khiladi01/Portfolio-Project'>
+                    <Link to='https://github.com/khiladi01/'>
                         <i className='bx bxl-github text-2xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent hover:transform-content hover:scale-125 transition-all ease-in-out duration-300'></i>
                     </Link>
                     <Link to='https://www.instagram.com/iamakshayraj01?igsh=YnNodHZpa2ZncjQx'>

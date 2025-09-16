@@ -2,6 +2,8 @@ import "../style/Edit.css";
 import Firstprojectimage from "../assets/project/PP IMG (1).png";
 import Secondprojectimage from "../assets/project/PP IMG (2).png";
 import Thirdprojectimage from "../assets/project/PP IMG (3).png";
+import Fourthprojectimage from "../assets/project/PP IMG (4).png";
+import Fifthprojectimage from "../assets/project/PP IMG (5).png"
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { useEffect, useRef } from "react";
@@ -63,6 +65,22 @@ function Project () {
             tools: ["Vite", "React", "TailWind", "Spline"],
             shadow: "shadow-[#FF00E5]",
             link: "https://khiladi01.github.io/3D-Landing-Page/"
+          },
+        {
+            id: "projectlayoutfourth",
+            title: "Diagnosync ➤ Mini Full Stack Project On Medical Care",
+            image: Fourthprojectimage,
+            tools: ["Vite", "React", "TailWind"],
+            shadow: "shadow-[#00FFF0]",
+            link: "https://diagnosync-2.onrender.com"
+          },
+        {
+            id: "projectlayoutfifth",
+            title: "MedVault ➤ Full Stack Project On Medical Care",
+            image: Fifthprojectimage,
+            tools: ["Next.js"," TailWind", "Mongo DB", "Express.Js", "Node.Js"],
+            shadow: "shadow-[#FF00E5]",
+            link: "https://medvault-three.vercel.app"
           }].map(({ id, title, image, tools, shadow, link }) => (
             <div
               key={id}
