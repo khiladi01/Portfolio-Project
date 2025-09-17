@@ -2,7 +2,7 @@
 
 Welcome to **RAUSHAN PORTFOLIO** – a sleek, glowing, and immersive portfolio website crafted by **Raushan Raj**, a frontend + 3D web developer who builds responsive, modern UIs with a blend of aesthetics and performance.
 
-![Preview](your-preview-image-link-here)
+![Preview](https://khiladi01.github.io/Portfolio-Project/)
 
 ---
 
