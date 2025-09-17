@@ -107,5 +107,13 @@
   #resumelayout{
     box-shadow:0px 0px 15px #FF007F;
   }
+
+  /* Chatbox */
+  #chatbox{
+    background-image: url("../assets/chat/chat.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 10px cyan;
+  }
   
   
