@@ -9,7 +9,7 @@ import Swal from "sweetalert2";
 
 function Chat () {
    
-  // Swal.fire("Welcome To My Chat Page");
+  Swal.fire("Welcome To My Chat Page");
 
     return(
         <>
