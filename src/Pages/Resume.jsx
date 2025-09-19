@@ -1,5 +1,5 @@
 import "../style/Edit.css";
-import Resumeimage from "../assets/Resume/Raushan Raj Resume.png";
+import Resumeimg from "../assets/Resume/raj.png";
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import Swal from "sweetalert2";
@@ -75,7 +75,7 @@ function Resume() {
             className="w-full max-w-[650px] rounded-sm flex justify-center items-center"
           >
             <img
-              src={Resumeimage}
+              src={Resumeimg}
               alt="Resume Image"
               className="w-full h-auto rounded-md object-contain"
             />
